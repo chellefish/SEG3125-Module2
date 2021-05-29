@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp-->
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+	<title>Michelle's Market</title>
+</head>
+<h1>Michelle's Market</h1>
+<body>
+
+<!-- Tab links, each one with an onclick event associated with it -->
+<div class="tab">
+  <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+  <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+  <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+</div>
+
+<!-- Tab content -->
+<div id="Client" class="tabcontent">
+  <h3>Client Information</h3>
+  <p>Tell us a bit about your dietary preferences.</p>
+	<br>
+	<div id = "dietSelect" class="checkbox">
+		<span>
+			<input id="LactoseFree" type="checkbox" value="LactoseFree">Lactose Free<br><br>
+		</span>
+		<span>
+			<input id="NutFree" type="checkbox" value="NutFree">Nut Free<br><br>
+		</span>
+		<span>
+			<input id="Organic" type="checkbox" value="Organic">Organic<br><br>
+		<span>
+		<span>
+			<input id="None" type="checkbox" value="None">None<br><br>
+		</span>
+	</div>
+	<button id="submitButton" type="button" class="submit" onclick="checkProductChoices()">
+		 SUBMIT RESPONSE
+	</button>
+</div>
+
+<div id="Products" class="tabcontent">
+  <h3>Your Targeted Products</h3>
+  <p>We preselected products based on your restrictions.</p>
+	 <p>Choose items to buy:</p>
+	 <div id="displayProduct"></div>
+	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
+		Add selected items to cart.
+	</button>
+</div>
+
+<div id="Cart" class="tabcontent">
+  <h3>Cart</h3>
+  <p>Here is your cart.</p>
+  <div id="displayCart"></div>
+</div>
+
+<script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
+
+</body>
+</html>
+<html>
+<div id="Signature">site created by chellefish</p>
+</html>
