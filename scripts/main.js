@@ -117,6 +117,7 @@ function selectedItems(){
 	div1.appendChild(document.createTextNode("Total Price is $" + getTotalPrice(chosenProducts)));
 	h3.appendChild(div1);
 c.appendChild(h3);
+	alert("Item(s) successfully added to cart!")
 
 
 }
